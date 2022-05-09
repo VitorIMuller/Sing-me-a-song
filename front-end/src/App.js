@@ -1,4 +1,4 @@
-import { Suspense, lazy, Component } from "react";
+import { Suspense, lazy } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -7,8 +7,8 @@ import {
 
 const Loading = () => (
   <div>Loading...</div>
-  );
-  
+);
+
 const LazyWrapper = (Component) => (props) => (
   <Suspense fallback={<Loading />}>
     <Component {...props} />
