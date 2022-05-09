@@ -1,9 +1,6 @@
 # Sing Me A Song
 
 Have you ever asked someone for a song recommendation? Thats solved by this app! This is an application for anonymous songs recommendations.
-<p align="center">
-  <img src="front-end/public/assets/sing-me-a-song.gif" />
-</p>
 
 ## About
 
