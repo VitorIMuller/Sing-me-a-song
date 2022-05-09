@@ -3,7 +3,7 @@ import app from "../src/app.js";
 import {
     createInsertRecommendationData,
     createRecommendation,
-} from "../tests/factories.js";
+} from "./factories.js";
 import supertest from "supertest";
 
 afterEach(async () => {
