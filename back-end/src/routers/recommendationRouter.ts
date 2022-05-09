@@ -1,6 +1,5 @@
 import { Router } from "express";
 import { recommendationController } from "../controllers/recommendationController.js";
-import testController from "../controllers/testController.js"
 
 const recommendationRouter = Router();
 
@@ -12,6 +11,5 @@ recommendationRouter.get("/:id", recommendationController.getById);
 recommendationRouter.post("/:id/upvote", recommendationController.upvote);
 recommendationRouter.post("/:id/downvote", recommendationController.downvote);
 
-recommendationRouter.post("/clear", testController.clearDatabase);
 
 export default recommendationRouter;
