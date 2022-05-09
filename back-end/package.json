@@ -5,7 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/server.ts"
+    "dev": "nodemon src/server.ts",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest -i"
   },
   "keywords": [],
   "author": "",
@@ -18,11 +19,8 @@
     "@types/joi": "^17.2.3",
     "@types/node": "^16.3.3",
     "@types/supertest": "^2.0.11",
-    "@typescript-eslint/eslint-plugin": "^5.22.0",
-    "@typescript-eslint/parser": "^5.22.0",
     "dotenv-cli": "^5.1.0",
     "eslint": "^7.32.0",
-    "eslint-plugin-react": "^7.29.4",
     "jest": "^28.0.3",
     "nodemon": "^2.0.12",
     "prisma": "^3.13.0",
@@ -32,6 +30,7 @@
     "typescript": "^4.6.4"
   },
   "dependencies": {
+    "@faker-js/faker": "^6.3.1",
     "@prisma/client": "^3.13.0",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
@@ -39,5 +38,8 @@
     "express-async-errors": "^3.1.1",
     "joi": "^17.4.1",
     "react-player": "^2.10.0"
+  },
+  "prisma": {
+    "seed": "ts-node ./prisma/seed.ts"
   }
 }
