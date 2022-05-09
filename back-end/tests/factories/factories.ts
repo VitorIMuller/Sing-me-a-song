@@ -1,6 +1,6 @@
 import { Recommendation } from "@prisma/client";
 import { faker } from "@faker-js/faker";
-import { prisma } from "../src/database.js"
+import { prisma } from "../../src/database.js"
 
 export function recommendationData(score: number): Recommendation {
     return {

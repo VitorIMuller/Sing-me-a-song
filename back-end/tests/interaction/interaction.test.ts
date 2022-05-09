@@ -1,9 +1,9 @@
-import { prisma } from "../src/database.js";
-import app from "../src/app.js";
+import { prisma } from "../../src/database.js";
+import app from "../../src/app.js";
 import {
     createInsertRecommendationData,
     createRecommendation,
-} from "./factories.js";
+} from "../factories/factories.js";
 import supertest from "supertest";
 
 afterEach(async () => {
